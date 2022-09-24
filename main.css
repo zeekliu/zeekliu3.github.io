@@ -1,0 +1,45 @@
+body{
+    font-family: Consolas;
+    background: black;
+}
+#div_menu{
+    display: flex;
+    list-style-type: none;
+    position: fixed;
+    margin: 0 auto;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    border-bottom-style: solid;
+    background: white;
+}
+#div_menu a{
+    float: left;
+    padding-right: 12pt;
+    padding-left: 12pt;
+    padding-top: 12pt;
+    padding-bottom: 12pt;
+    text-decoration: none;
+    color: black;
+}
+a:hover{background: rgba(128,128,128,.5);}
+#div_main{
+    padding-top: 60px;
+    padding-bottom: 20px;
+    min-height: 700px;
+    max-width: 960px;
+    margin: 0 auto;
+    background: white;
+}
+#div_main h1{
+    text-align: center;
+    font-family: Consolas;
+    font-size: 30pt;
+}
+#div_main h2{
+    font-family: Consolas;
+    font-size: 15pt;
+}
+a{
+    color:#0969da;
+}
