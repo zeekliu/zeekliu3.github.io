@@ -15,6 +15,9 @@
 #div_left p{
     margin-left: 15px;
 }
+#copyright{
+	position: bottom left;
+}
 #div_right{
     margin-left: 30px;
     margin-right: 30px;
