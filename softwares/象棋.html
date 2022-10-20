@@ -4,11 +4,16 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="../main.css"/>
     <style>
-#div_pages{
-    margin: 30pt;
+img{
+    margin-left: 30px;
+    margin-right: 30px;
+    width: 900px;
+}
+p{
+    margin-left: 20px;
 }
     </style>
-    <title>软件</title>
+    <title>象棋</title>
 </head>
 <body>
     <div id="div_menu">
@@ -24,21 +29,13 @@
         <a href="../links/">链接</a>
     </div>
     <div id="div_main">
-        <h1>软件</h1>
-        <div id="div_pages">
-        </div>
+        <h1>象棋</h1>
+        <p>可支持两人在一台电脑上对弈（局域网链接正在开发中）</p>
+        <p>支持将棋局保存为*.chs文件</p>
+        <p>悔棋最多悔两步</p>
+        <img src="images/0x03.png"/>
+        <p>下载链接: <a href="../downloads/象棋1.3安装包.exe">象棋1.3安装包.exe</a></p>
+        <p>源代码: <a href="../source_code/python/象棋.py">象棋.py</a></p>
     </div>
 </body>
-<script>
-var pages=[
-    "Memory_usage_analysis",
-    "CatchCheese",
-    "Minesweeper",
-    "象棋"
-    ];
-var pages_list=document.getElementById("div_pages");
-for(var i=0;i<pages.length;++i){
-    pages_list.innerHTML += "<p>"+(i+1)+". <a href=\""+pages[i]+".html\">"+pages[i]+"</a></p>";
-}
-</script>
 </html>
