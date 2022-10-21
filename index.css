@@ -1,24 +1,22 @@
-#div_container{
-    list-style-type: none;
+#div_main{
+    position: relative;
 }
-.bar{
-    float: left;
-}
-#div_left{
+#div_introduction{
+    left: 30px;
+    top: 100px;
+    position: absolute;
     width: 200px;
     border-style: solid;
     border-color: rgb(255,96,0);
-    margin-left: 30px;
-    margin-right: 20px;
-    margin-top: 50px;
+    border-width: 2px;
+    z-index: 0;
 }
-#div_left p{
+#div_introduction p{
     margin-left: 15px;
 }
 #copyright{
-	position: bottom left;
-}
-#div_right{
-    margin-left: 30px;
-    margin-right: 30px;
+    position: absolute;
+	bottom: 0;
+    width: 100%;
+    text-align: center;
 }
