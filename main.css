@@ -27,7 +27,6 @@ body{
     text-decoration: none;
     color: black;
 }
-a:hover{background: rgba(128,128,128,.5);}
 #div_main{
     padding-top: 60px;
     padding-bottom: 20px;
@@ -44,3 +43,4 @@ a:hover{background: rgba(128,128,128,.5);}
 #div_main h2{font-size: 15pt;}
 #div_main h3{font-size: 10pt;}
 a{color:#0969da;}
+a:hover{background: rgba(128,128,128,.5);}
