@@ -4,8 +4,10 @@ from PyQt4 import QtGui, QtCore
 from PyQt4.QtCore import Qt
 from threading import Thread
 from sys import argv, exit
-#from math import ceil
+from optparse import OptionParser
 import sip
+parser = OptionParser()
+options, args = parser.parse_args()
 sizes = []
 tot = 0
 sort = True
@@ -124,8 +126,13 @@ class Window(QtGui.QMainWindow):
 class Widget(QtGui.QWidget):
     def __init__(self, parent):
         QtGui.QWidget.__init__(self, parent)
-        self.dir_path = str(QtGui.QFileDialog.getExistingDirectory(self, 'Choose a directory', 'C:\\'))
-        if not self.dir_path: exit()
+        if args:
+            self.dir_path = args[0]
+            if not isdir(self.dir_path): self.dir_path = split(self.dir_path)[0]
+            if not isdir(self.dir_path): exit(0)
+        else:
+            self.dir_path = str(QtGui.QFileDialog.getExistingDirectory(self, 'Choose a directory', 'C:\\'))
+            if not self.dir_path: exit(0)
         self.thread = Thread(target = get_target(self.dir_path))
         self.update_timer = self.startTimer(500)
         self.xs = []
